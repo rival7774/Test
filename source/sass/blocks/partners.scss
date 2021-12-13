@@ -1,0 +1,11 @@
+.partners--title {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @include font-size(28px, 45px);
+
+  @media (min-width: $desktop) {
+    @include font-size(36px, 58px);
+  }
+}

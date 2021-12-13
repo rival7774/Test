@@ -1,13 +1,11 @@
-
+$light-gray: #ebebf1;
+$dark-grey: #768298;
+$gray-medium: #bbc4d6;
+$black-blue: #121920;
+$shadow-header: rgba(0, 0, 0, 0.05);
+$shadow-card-10: rgba(0, 0, 0, 0.1);
+$shadow-card-03: rgba(164, 164, 164, 0.03);
 
 $only-mobile: 767px;
 $tablet: 768px;
-
-@media (min-width: $tablet) {
-
-}
-$desktop: 1280px;
-
-@media (min-width: $desktop) {
-
-}
+$desktop: 1240px;

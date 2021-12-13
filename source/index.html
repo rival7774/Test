@@ -6,37 +6,196 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
   <link rel="stylesheet" href="css/style.min.css">
-
-  <!-- <link rel="icon" href="img/favicon/favicon.ico"> -->
-  <!-- <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml"> -->
-  <!-- <link rel="apple-touch-icon" href="img/favicon/180.png"> -->
-  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
-  <link rel="import" href="img/favicon/favicons.html">
-  <title>Окна</title>
+  <title>Тест</title>
 </head>
 
 <body class="page-body">
 
-  <picture>
-    <!-- <source type="image/webp" media="(min-width: 1280px)"
-      srcset="img/header-cat-pro-desktop.webp, img/header-cat-pro-desktop@x2.webp 2x">
-    <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)"
-      srcset="img/header-cat-pro-tablet.webp, img/header-cat-pro-tablet@x2.webp 2x"> -->
-    <source type="image/webp" srcset="img/cat-skinny.webp, img/cat-skinny@x2.webp 2x">
+<header class="header conteiner">
+  <div class="header--wrap-logo">
+    <img class="header--logo img" width="136" height="31" src="img/logo.svg" alt="Логотип компании qsoft">
+    <img class="header-icon-avatar" width="25" height="25" src="img/profile-icon.svg" alt="Иконка аватара">
+  </div>
 
-    <!-- <source media="(min-width: 1280px)" srcset="img/header-cat-pro-desktop.png, img/header-cat-pro-desktop@x2.png 2x"> -->
-    <!-- <source media="(min-width: 768px)" srcset="img/header-cat-pro-tablet.jpg, img/header-cat-pro-tablet@x2.jpg 2x"> -->
-    <img class="img functional-nutrition__img" width="280" height="270" src="img/cat-skinny.png"
-      srcset="img/cat-skinny@x2.png 2x" alt="Изображение банки с кормом cat pro energy">
-  </picture>
+  <form class="header--form" name="formSearch" action="#" method="get">
+    <label class="visually-hidden" for="header-search">Поисковая строка</label>
+    <input class="header--search" type="search" name="search" id="header-search" placeholder="Найти...">
+  </form>
 
-  <svg class="socials__icon socials__icon--email" width="20" height="15">
-    <use href="img/sprite.svg#icon-email"></use>
-  </svg>
+  <div class="user-info">
+    <span class="user-info--name">Константин</span>
+    <img class="user-info--avatar img" width="40" height="40" src="img/avatar.png" alt="Аватар пользователя">
+  </div>
+</header>
+
+<main>
+  <section class="partners conteiner">
+    <h2 class="partners--title title">Наши партнёры</h2>
+
+    <ul class="partners-list list">
+      <li class="partners-list--item">
+        <a class="partners-list--link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+                    srcset="img/henkel.webp, img/henkel@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1239px)"
+                    srcset="img/henkel-tablet.webp, img/henkel-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/henkel-mobile.webp, img/henkel-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1240px)"
+                    srcset="img/henkel.png, img/henkel@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/henkel-tablet.png, img/henkel-tablet@2x.png 2x">
+            <img class="partners-list--logo img" width="285" height="90" src="img/henkel-mobile.png"
+                 srcset="img/henkel-mobile@2x.png 2x"
+                 alt="Логатип партнёра">
+          </picture>
+        </a>
+      </li>
+
+      <li class="partners-list--item">
+        <a class="partners-list--link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+                    srcset="img/john.webp, img/john@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1239px)"
+                    srcset="img/john-tablet.webp, img/john-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/john-mobile.webp, img/john-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1240px)"
+                    srcset="img/john.png, img/john@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/john-tablet.png, img/john-tablet@2x.png 2x">
+            <img class="partners-list--logo img" width="285" height="90" src="img/john-mobile.png"
+                 srcset="img/john-mobile@2x.png 2x"
+                 alt="Логатип партнёра">
+          </picture>
+        </a>
+      </li>
+
+      <li class="partners-list--item">
+        <a class="partners-list--link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+                    srcset="img/mac.webp, img/mac@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1239px)"
+                    srcset="img/mac-tablet.webp, img/mac-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/mac-mobile.webp, img/mac-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1240px)"
+                    srcset="img/mac.png, img/mac@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/mac-tablet.png, img/mac-tablet@2x.png 2x">
+            <img class="partners-list--logo img" width="285" height="90" src="img/mac-mobile.png"
+                 srcset="img/mac-mobile@2x.png 2x"
+                 alt="Логатип партнёра">
+          </picture>
+        </a>
+      </li>
+
+      <li class="partners-list--item">
+        <a class="partners-list--link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+                    srcset="img/ikea.webp, img/ikea@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1239px)"
+                    srcset="img/ikea-tablet.webp, img/ikea-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/ikea-mobile.webp, img/ikea-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1240px)"
+                    srcset="img/ikea.png, img/ikea@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/ikea-tablet.png, img/ikea-tablet@2x.png 2x">
+            <img class="partners-list--logo img" width="285" height="90" src="img/ikea-mobile.png"
+                 srcset="img/ikea-mobile@2x.png 2x"
+                 alt="Логатип партнёра">
+          </picture>
+        </a>
+      </li>
+
+      <li class="partners-list--item">
+        <a class="partners-list--link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+                    srcset="img/reebok.webp, img/reebok@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1239px)"
+                    srcset="img/reebok-tablet.webp, img/reebok-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/reebok-mobile.webp, img/reebok-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1240px)"
+                    srcset="img/reebok.png, img/reebok@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/reebok-tablet.png, img/reebok-tablet@2x.png 2x">
+            <img class="partners-list--logo img" width="285" height="90" src="img/reebok-mobile.png"
+                 srcset="img/reebok-mobile@2x.png 2x"
+                 alt="Логатип партнёра">
+          </picture>
+        </a>
+      </li>
+
+      <li class="partners-list--item">
+        <a class="partners-list--link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+                    srcset="img/nike.webp, img/nike@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1239px)"
+                    srcset="img/nike-tablet.webp, img/nike-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/nike-mobile.webp, img/nike-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1240px)"
+                    srcset="img/nike.png, img/nike@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/nike-tablet.png, img/nike-tablet@2x.png 2x">
+            <img class="partners-list--logo img" width="285" height="90" src="img/nike-mobile.png"
+                 srcset="img/nike-mobile@2x.png 2x"
+                 alt="Логатип партнёра">
+          </picture>
+        </a>
+      </li>
+
+      <li class="partners-list--item">
+        <a class="partners-list--link" href="#">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+                    srcset="img/caterpillar.webp, img/caterpillar@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px) and (max-width: 1239px)"
+                    srcset="img/caterpillar-tablet.webp, img/caterpillar-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/caterpillar-mobile.webp, img/caterpillar-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1240px)"
+                    srcset="img/caterpillar.png, img/caterpillar@2x.png 2x">
+            <source media="(min-width: 768px)"
+                    srcset="img/caterpillar-tablet.png, img/caterpillar-tablet@2x.png 2x">
+            <img class="partners-list--logo img" width="285" height="90" src="img/caterpillar-mobile.png"
+                 srcset="img/caterpillar-mobile@2x.png 2x"
+                 alt="Логатип партнёра">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
 
 </body>
 
 </html>
+
+
+<!--<picture>-->
+<!--  &lt;!&ndash; <source type="image/webp" media="(min-width: 1280px)"-->
+<!--    srcset="img/header-cat-pro-desktop.webp, img/header-cat-pro-desktop@x2.webp 2x">-->
+<!--  <source type="image/webp" media="(min-width: 768px) and (max-width: 1279px)"-->
+<!--    srcset="img/header-cat-pro-tablet.webp, img/header-cat-pro-tablet@x2.webp 2x"> &ndash;&gt;-->
+<!--  <source type="image/webp" srcset="img/cat-skinny.webp, img/cat-skinny@x2.webp 2x">-->
+
+<!--  &lt;!&ndash; <source media="(min-width: 1280px)" srcset="img/header-cat-pro-desktop.png, img/header-cat-pro-desktop@x2.png 2x"> &ndash;&gt;-->
+<!--  &lt;!&ndash; <source media="(min-width: 768px)" srcset="img/header-cat-pro-tablet.jpg, img/header-cat-pro-tablet@x2.jpg 2x"> &ndash;&gt;-->
+<!--  <img class="img functional-nutrition__img" width="280" height="270" src="img/cat-skinny.png"-->
+<!--       srcset="img/cat-skinny@x2.png 2x" alt="Изображение банки с кормом cat pro energy">-->
+<!--</picture>-->
+
+<!--<svg class="socials__icon socials__icon&#45;&#45;email" width="20" height="15">-->
+<!--  <use href="img/sprite.svg#icon-email"></use>-->
+<!--</svg>-->

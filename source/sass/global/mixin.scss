@@ -1,23 +1,11 @@
-@mixin font($size, $height, $weight: 400, $family: "Oswald") {
+@mixin font($size, $height, $weight: 400,) {
   font-size: $size;
   line-height: $height;
   font-weight: $weight;
-  font-family: $family, "Arial", sans-serif;
-}
-
-@mixin font-arial($size, $height, $weight: 400) {
-  font-size: $size;
-  line-height: $height;
-  font-weight: $weight;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 @mixin font-size($size, $height) {
   font-size: $size;
   line-height: $height;
-}
-
-@mixin padding($width) {
-  padding-left: calc(50% - $width);
-  padding-right: calc(50% - $width);
 }

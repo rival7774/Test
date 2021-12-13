@@ -1,0 +1,5 @@
+.header-icon-avatar {
+  @media (min-width: $only-mobile) {
+    display: none;
+  }
+}

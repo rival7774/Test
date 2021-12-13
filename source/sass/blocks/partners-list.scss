@@ -1,0 +1,43 @@
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: $desktop) {
+    gap: 30px;
+  }
+}
+
+.partners-list--link {
+  display: block;
+  padding: 24px;
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+
+  @media (min-width: $tablet) {
+    padding: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 27px 17px;
+  }
+
+  &:hover {
+    box-shadow: -3px 0 40px $shadow-card-10, 0 0 10px $shadow-card-03;
+  }
+}
+
+.partners-list--logo {
+  width: 285px;
+  height: 90px;
+  object-fit: contain;
+
+  @media (min-width: $tablet) {
+    width: 199px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 234px;
+    height: 64px;
+  }
+}

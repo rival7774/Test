@@ -1,0 +1,23 @@
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+  cursor: pointer;
+
+  @media (max-width: $only-mobile) {
+    display: none;
+  }
+}
+
+.user-info--name {
+  margin-right: 13px;
+  color: $dark-grey;
+
+  @media (min-width: $tablet) {
+    margin-right: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 13px;
+  }
+}

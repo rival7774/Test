@@ -1,0 +1,6 @@
+.page-body {
+  @include font(14px, 16px);
+  padding: 0;
+  margin: auto;
+  min-height: 100%;
+}

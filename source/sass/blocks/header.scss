@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 10px $shadow-header;
+  min-height: 31px;
+  margin-bottom: 70px;
+
+  @media (max-width: $only-mobile) {
+    padding: 0;
+  }
+}
+
+.header--wrap-logo {
+  @media (max-width: $only-mobile) {
+    padding: 16px 21px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header--form {
+  flex-grow: 1;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: $light-gray;
+    width: 1px;
+    height: 100%;
+
+    @media (max-width: $only-mobile) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 24px;
+    display: block;
+    background-image: url("../img/icon-search.svg");
+    width: 18px;
+    height: 18px;
+
+    @media (min-width: $tablet) {
+      top: 30px;
+      left: 62px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 29px;
+      left: 73px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 20px 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 19px 60px 19px 59px;
+  }
+
+  @media (max-width: $only-mobile) {
+    order: 1;
+    padding: 0;
+  }
+}
+
+.header--search {
+  height: 40px;
+  width: 100%;
+  padding: 12px 39px;
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+
+  @media (max-width: $only-mobile) {
+    border: none;
+    border-top: 1px solid $light-gray;
+    padding: 12px 21px 12px 49px;
+  }
+}

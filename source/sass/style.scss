@@ -1,8 +1,21 @@
 //global
+@import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/mixin.scss";
+
 //blocks
-@import "blocks/test.scss";
-//index
+//@import "blocks/test.scss";
+@import "blocks/conteiner.scss";
+@import "blocks/img.scss";
+@import "blocks/list.scss";
+@import "blocks/title.scss";
+@import "blocks/visually-hiden.scss";
+@import "blocks/header.scss";
+@import "blocks/user-info.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page.scss";
+@import "blocks/header-icon-avatar.scss";
+@import "blocks/partners.scss";
+@import "blocks/partners-list.scss";
